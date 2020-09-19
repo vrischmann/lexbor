@@ -18,6 +18,45 @@
 #include "lexbor/dom/interfaces/shadow_root.h"
 #include "lexbor/dom/interfaces/text.h"
 
+lxb_dom_cdata_section_t* lxb_dom_interface_cdata_section(void *obj) {
+    return (lxb_dom_cdata_section_t*) (obj);
+}
+lxb_dom_character_data_t* lxb_dom_interface_character_data(void* obj) {
+    return (lxb_dom_character_data_t*) (obj);
+}
+lxb_dom_comment_t* lxb_dom_interface_comment(void* obj) {
+    return (lxb_dom_comment_t*) (obj);
+}
+lxb_dom_document_t* lxb_dom_interface_document(void* obj) {
+    return (lxb_dom_document_t*) (obj);
+}
+lxb_dom_document_fragment_t* lxb_dom_interface_document_fragment(void* obj) {
+    return (lxb_dom_document_fragment_t*) (obj);
+}
+lxb_dom_document_type_t* lxb_dom_interface_document_type(void* obj) {
+    return (lxb_dom_document_type_t*) (obj);
+}
+lxb_dom_element_t* lxb_dom_interface_element(void* obj) {
+    return (lxb_dom_element_t*) (obj);
+}
+lxb_dom_attr_t* lxb_dom_interface_attr(void* obj) {
+    return (lxb_dom_attr_t*) (obj);
+}
+lxb_dom_event_target_t* lxb_dom_interface_event_target(void* obj) {
+    return (lxb_dom_event_target_t*) (obj);
+}
+lxb_dom_node_t* lxb_dom_interface_node(void* obj) {
+    return (lxb_dom_node_t*) (obj);
+}
+lxb_dom_processing_instruction_t* lxb_dom_interface_processing_instruction(void* obj) {
+    return (lxb_dom_processing_instruction_t*) (obj);
+}
+lxb_dom_shadow_root_t* lxb_dom_interface_shadow_root(void* obj) {
+    return (lxb_dom_shadow_root_t*) (obj);
+}
+lxb_dom_text_t* lxb_dom_interface_text(void* obj) {
+    return (lxb_dom_text_t*) (obj);
+}
 
 lxb_dom_interface_t *
 lxb_dom_interface_create(lxb_dom_document_t *document, lxb_tag_id_t tag_id,
